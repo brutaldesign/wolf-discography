@@ -1,0 +1,419 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wolf Discography\n"
+"POT-Creation-Date: 2013-12-20 16:50+0100\n"
+"PO-Revision-Date: 2013-12-20 16:50+0100\n"
+"Last-Translator: WpWolf <help@wpwolf.com>\n"
+"Language-Team: wpwolf.com <support@wpwolf.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.2\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wolf-discography.php:205
+#, php-format
+msgid ""
+"says : <em>Almost done! you need to create a page for your releases.</em> <a "
+"href=\"%s\">Create a discography page</a>"
+msgstr ""
+
+#: ../wolf-discography.php:252
+#, php-format
+msgid ""
+"Your discography page has been created. You can change it in the <a href=\"%s"
+"\">plugin options</a>"
+msgstr ""
+
+#: ../wolf-discography.php:432 ../wolf-discography.php:444
+#: ../classes/widgets/class-wd-widget-discography.php:91
+msgid "Releases"
+msgstr ""
+
+#: ../wolf-discography.php:433
+msgid "Release"
+msgstr ""
+
+#: ../wolf-discography.php:434
+msgid "Add New"
+msgstr ""
+
+#: ../wolf-discography.php:435
+msgid "Add New Release"
+msgstr ""
+
+#: ../wolf-discography.php:436
+msgid "All Releases"
+msgstr ""
+
+#: ../wolf-discography.php:437
+msgid "Edit Release"
+msgstr ""
+
+#: ../wolf-discography.php:438
+msgid "New Release"
+msgstr ""
+
+#: ../wolf-discography.php:439
+msgid "View Release"
+msgstr ""
+
+#: ../wolf-discography.php:440
+msgid "Search Releases"
+msgstr ""
+
+#: ../wolf-discography.php:441
+msgid "No releases found"
+msgstr ""
+
+#: ../wolf-discography.php:442
+msgid "No releases found in Trash"
+msgstr ""
+
+#: ../wolf-discography.php:488 ../wolf-discography.php:502
+msgid "Bands"
+msgstr ""
+
+#: ../wolf-discography.php:489
+msgid "Band"
+msgstr ""
+
+#: ../wolf-discography.php:490
+msgid "Search Bands"
+msgstr ""
+
+#: ../wolf-discography.php:491
+msgid "Popular Bands"
+msgstr ""
+
+#: ../wolf-discography.php:492
+msgid "All Bands"
+msgstr ""
+
+#: ../wolf-discography.php:493
+msgid "Parent Band"
+msgstr ""
+
+#: ../wolf-discography.php:494
+msgid "Parent Band:"
+msgstr ""
+
+#: ../wolf-discography.php:495
+msgid "Edit Band"
+msgstr ""
+
+#: ../wolf-discography.php:496
+msgid "Update Band"
+msgstr ""
+
+#: ../wolf-discography.php:497
+msgid "Add New Band"
+msgstr ""
+
+#: ../wolf-discography.php:498
+msgid "New Band"
+msgstr ""
+
+#: ../wolf-discography.php:499
+msgid "Separate bands with commas"
+msgstr ""
+
+#: ../wolf-discography.php:500
+msgid "Add or remove bands"
+msgstr ""
+
+#: ../wolf-discography.php:501
+msgid "Choose from the most used bands"
+msgstr ""
+
+#: ../wolf-discography.php:519 ../wolf-discography.php:533
+msgid "Labels"
+msgstr ""
+
+#: ../wolf-discography.php:520
+msgid "Label"
+msgstr ""
+
+#: ../wolf-discography.php:521
+msgid "Search Labels"
+msgstr ""
+
+#: ../wolf-discography.php:522
+msgid "Popular Labels"
+msgstr ""
+
+#: ../wolf-discography.php:523
+msgid "All Labels"
+msgstr ""
+
+#: ../wolf-discography.php:524
+msgid "Parent Label"
+msgstr ""
+
+#: ../wolf-discography.php:525
+msgid "Parent Label:"
+msgstr ""
+
+#: ../wolf-discography.php:526
+msgid "Edit Label"
+msgstr ""
+
+#: ../wolf-discography.php:527
+msgid "Update Label"
+msgstr ""
+
+#: ../wolf-discography.php:528
+msgid "Add New Label"
+msgstr ""
+
+#: ../wolf-discography.php:529
+msgid "New Label"
+msgstr ""
+
+#: ../wolf-discography.php:530
+msgid "Separate labels with commas"
+msgstr ""
+
+#: ../wolf-discography.php:531
+msgid "Add or remove labels"
+msgstr ""
+
+#: ../wolf-discography.php:532
+msgid "Choose from the most used labels"
+msgstr ""
+
+#: ../wolf-discography.php:566
+msgid "Options"
+msgstr ""
+
+#: ../wolf-discography.php:584
+msgid "Release Details"
+msgstr ""
+
+#: ../wolf-discography.php:590
+#: ../classes/widgets/class-wd-widget-discography.php:98
+#: ../classes/widgets/class-wd-widget-last-release.php:95
+#: ../templates/content-release.php:73 ../templates/single-release.php:77
+msgid "Title"
+msgstr ""
+
+#: ../wolf-discography.php:596
+msgid "Release date"
+msgstr ""
+
+#: ../wolf-discography.php:602
+msgid "Catalog Number"
+msgstr ""
+
+#: ../wolf-discography.php:608
+msgid "Type"
+msgstr ""
+
+#: ../wolf-discography.php:610
+#, php-format
+msgid ""
+"You can choose to not display the format in the <a href=\"%s\">plugin "
+"options</a>"
+msgstr ""
+
+#: ../wolf-discography.php:613
+msgid "CD"
+msgstr ""
+
+#: ../wolf-discography.php:614
+msgid "Digital Download"
+msgstr ""
+
+#: ../wolf-discography.php:615
+msgid "DVD"
+msgstr ""
+
+#: ../wolf-discography.php:616
+msgid "Vinyl"
+msgstr ""
+
+#: ../wolf-discography.php:617
+msgid "Tape"
+msgstr ""
+
+#: ../wolf-discography.php:622
+msgid "iTunes"
+msgstr ""
+
+#: ../wolf-discography.php:628
+msgid "Amazon"
+msgstr ""
+
+#: ../wolf-discography.php:634
+msgid "Buy (any link where the release can be purchased)"
+msgstr ""
+
+#: ../wolf-discography.php:716
+msgid "Discography Page"
+msgstr ""
+
+#: ../wolf-discography.php:720
+msgid "Link Band Name to category page"
+msgstr ""
+
+#: ../wolf-discography.php:721
+msgid "Link Label Name to category page"
+msgstr ""
+
+#: ../wolf-discography.php:722
+msgid "Display format (like CD, digital download etc...)"
+msgstr ""
+
+#: ../wolf-discography.php:723
+msgid "Info"
+msgstr ""
+
+#: ../wolf-discography.php:771
+msgid "-- Select --"
+msgstr ""
+
+#: ../wolf-discography.php:834
+#, php-format
+msgid ""
+"If a discography page returns a 404 error, refresh your <a href=\"%s"
+"\">permalink structure</a>"
+msgstr ""
+
+#: ../wolf-discography.php:853
+msgid "Discography Options"
+msgstr ""
+
+#: ../wolf-discography.php:856
+msgid "Settings saved."
+msgstr ""
+
+#: ../wolf-discography.php:862
+msgid "Save Changes"
+msgstr ""
+
+#: ../wolf-discography.php:886
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr ""
+
+#: ../wolf-discography.php:887
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../wolf-discography.php:916
+msgid "<span class=\"meta-nav\">&larr;</span> Older releases"
+msgstr ""
+
+#: ../wolf-discography.php:920
+msgid "Newer releases <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../wolf-discography.php:958 ../wolf-discography.php:994
+msgid "No release to display yet."
+msgstr ""
+
+#: ../wolf-discography.php:989 ../templates/content-release.php:94
+msgid "View Details"
+msgstr ""
+
+#: ../classes/class-metabox.php:193
+msgid "Select one"
+msgstr ""
+
+#: ../classes/class-metabox.php:261 ../classes/class-metabox.php:287
+msgid "Clear"
+msgstr ""
+
+#: ../classes/class-metabox.php:262 ../classes/class-metabox.php:288
+msgid "Choose an image"
+msgstr ""
+
+#: ../classes/class-metabox.php:278
+msgid "Background color"
+msgstr ""
+
+#: ../classes/class-metabox.php:282
+msgid "Background image"
+msgstr ""
+
+#: ../classes/class-metabox.php:297
+msgid "Background repeat"
+msgstr ""
+
+#: ../classes/class-metabox.php:320
+msgid "Background position"
+msgstr ""
+
+#: ../classes/class-metabox.php:334
+msgid "Background attachment"
+msgstr ""
+
+#: ../classes/class-metabox.php:348
+msgid "Background size"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-discography.php:27
+msgid "Display your discography"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-discography.php:30
+msgid "Discography"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-discography.php:102
+#: ../classes/widgets/class-wd-widget-last-release.php:99
+msgid "Optional Text"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-discography.php:106
+msgid "Count"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-last-release.php:27
+msgid "Display your last release"
+msgstr ""
+
+#: ../classes/widgets/class-wd-widget-last-release.php:30
+#: ../classes/widgets/class-wd-widget-last-release.php:89
+msgid "Last Release"
+msgstr ""
+
+#: ../templates/content-release.php:14 ../templates/content-release.php:20
+#: ../templates/single-release.php:22
+msgid "Band "
+msgstr ""
+
+#: ../templates/content-release.php:29 ../templates/content-release.php:35
+#: ../templates/single-release.php:23
+msgid "Label "
+msgstr ""
+
+#: ../templates/content-release.php:57 ../templates/content-release.php:66
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../templates/content-release.php:61 ../templates/single-release.php:102
+msgid "Edit"
+msgstr ""
+
+#: ../templates/content-release.php:78 ../templates/single-release.php:82
+msgid "Release Date"
+msgstr ""
+
+#: ../templates/content-release.php:86 ../templates/single-release.php:90
+msgid "Catalog ref."
+msgstr ""
+
+#: ../templates/content-release.php:91 ../templates/single-release.php:95
+msgid "Format"
+msgstr ""
+
+#: ../templates/single-release.php:62
+msgid "Buy"
+msgstr ""
+
+#: ../templates/loop/no-releases-found.php:1
+msgid "No release yet"
+msgstr ""
