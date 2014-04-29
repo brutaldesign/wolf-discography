@@ -3,7 +3,7 @@
  * Plugin Name: Wolf Discography
  * Plugin URI: http://wpwolf.com/plugin/wolf-discography
  * Description: A plugin to display your releases.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: WpWolf
  * Author URI: http://wpwolf.com
  * Requires at least: 3.5
@@ -43,7 +43,7 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 	 * Contains the main functions for Wolf_Discography
 	 *
 	 * @class Wolf_Discography
-	 * @version 1.0.6
+	 * @version 1.0.7
 	 * @since 1.0.0
 	 * @package WolfDiscography
 	 * @author WpWolf
@@ -53,7 +53,7 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.0.6';
+		public $version = '1.0.7';
 
 		/**
 		 * @var string
@@ -105,6 +105,9 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 
 			add_action( 'init', array( $this, 'init' ), 0 );
 			add_action( 'init', array( $this, 'include_template_functions' ), 25 );
+
+			// register shortcode
+			add_shortcode( 'wolf_last_releases', array( $this, 'shortcode' ) );
 
 			// set default options
 			add_action( 'after_setup_theme', array( $this, 'default_options' ) );
@@ -493,6 +496,7 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 		public function add_settings_menu() {
 
 			add_submenu_page( 'edit.php?post_type=release', __( 'Settings', 'wolf' ), __( 'Settings', 'wolf' ), 'edit_plugins', 'wolf-discography-settings', array( $this, 'options_form' ) );
+			add_submenu_page( 'edit.php?post_type=release', __( 'Shortcode', 'wolf' ), __( 'Shortcode', 'wolf' ), 'edit_plugins', 'wolf-discography-shortcode', array( $this, 'help' ) );
 		}
 
 		/**
@@ -726,6 +730,24 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 		}
 
 		/**
+		 * Displays Shortcode help
+		 */
+		public function help() {
+			?>
+			<div class="wrap">
+				<h2><?php _e( 'Discography Shortcode', 'wolf' ) ?></h2>
+				<p><?php _e( 'To display your last releases in your post or page you can use the following shortcode.', 'wolf' ); ?></p>
+				<p><code>[wolf_last_releases]</code></p>
+				<p><?php _e( 'Additionally, you can add a count and/or categories attributes.', 'wolf' ); ?></p>
+				<p><code>[wolf_last_releases count="6" label="my-label" band="this-band"]</code></p>
+
+				<p><?php _e( 'You can also add a column count attribute.', 'wolf' ); ?></p>
+				<p><code>[wolf_last_releases col="2|3|4" category="my-category"]</code></p>
+			</div>
+			<?php
+		}
+
+		/**
 		 * Options form
 		 *
 		 * @return string
@@ -766,6 +788,59 @@ if ( ! class_exists( 'Wolf_Discography' ) ) {
 			// }
 
 			return $classes;
+		}
+
+		/**
+		 * Shortcode
+		 *
+		 * @param array $atts
+		 * @return string
+		 */
+		public function shortcode( $atts ) {
+
+			extract(
+				shortcode_atts(
+					array(
+						'count' => 4,
+						'band' => null,
+						'label' => null,
+						'col' => 4,
+					), $atts
+				)
+			);
+
+			ob_start();
+
+			$args = array(
+				'post_type' => array( 'release' ),
+				'posts_per_page' => absint( $count ),
+			);
+
+			if ( $band ) {
+				$args['band'] = $band;
+			}
+
+			if ( $label ) {
+				$args['label'] = $label;
+			}
+
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) : ?>
+				<ul class="shortcode-release-grid release-grid-col-<?php echo absint( $col ); ?>">
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<?php wolf_discography_get_template_part( 'content', 'release-shortcode' ); ?>
+
+					<?php endwhile; ?>
+				</ul><!-- .shortcode-release-grid -->
+			<?php else : // no release ?>
+				<?php wolf_discography_get_template( 'loop/no-releases-found.php' ); ?>
+			<?php endif;
+			wp_reset_postdata();
+
+			$html = ob_get_contents();
+			ob_end_clean();
+			return $html;
 		}
 
 		/**

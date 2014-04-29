@@ -79,24 +79,32 @@ article.wolf-release footer.entry-meta {
   margin-bottom: 1em;
 }
 
-#wolf-release-buttons {
+#wolf-release-buttons,
+.wolf-release-buttons {
   display: table;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 15px;
 }
-#wolf-release-buttons .wolf-release-button {
+#wolf-release-buttons .wolf-release-button,
+.wolf-release-buttons .wolf-release-button {
   display: table-cell;
   text-align: center;
 }
 #wolf-release-buttons .wolf-release-button a.wolf-release-amazon,
 #wolf-release-buttons .wolf-release-button a.wolf-release-itunes,
-#wolf-release-buttons .wolf-release-button a.wolf-release-buy {
+#wolf-release-buttons .wolf-release-button a.wolf-release-buy,
+.wolf-release-buttons .wolf-release-button a.wolf-release-amazon,
+.wolf-release-buttons .wolf-release-button a.wolf-release-itunes,
+.wolf-release-buttons .wolf-release-button a.wolf-release-buy {
   text-decoration: none !important;
 }
 #wolf-release-buttons .wolf-release-button a.wolf-release-amazon:before,
 #wolf-release-buttons .wolf-release-button a.wolf-release-itunes:before,
-#wolf-release-buttons .wolf-release-button a.wolf-release-buy:before {
+#wolf-release-buttons .wolf-release-button a.wolf-release-buy:before,
+.wolf-release-buttons .wolf-release-button a.wolf-release-amazon:before,
+.wolf-release-buttons .wolf-release-button a.wolf-release-itunes:before,
+.wolf-release-buttons .wolf-release-button a.wolf-release-buy:before {
   padding-right: 5px;
 }
 
@@ -143,6 +151,88 @@ article.wolf-release footer.entry-meta {
   margin-bottom: 3px;
 }
 
+/* Shortcode */
+.shortcode-release-grid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.shortcode-release-grid li {
+  list-style-type: none !important;
+  float: left;
+  width: 25%;
+}
+.shortcode-release-grid li .entry-thumbnail {
+  float: none;
+  width: 95% !important;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 1em !important;
+  height: auto;
+}
+.shortcode-release-grid li .entry-thumbnail .entry-title {
+  height: auto;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.release-grid-col-1 .wolf-release {
+  width: 100%;
+}
+
+.release-grid-col-2 .wolf-release {
+  width: 50%;
+}
+
+.release-grid-col-3 .wolf-release {
+  width: 33.33333%;
+}
+
+.release-grid-col-4 .wolf-release {
+  width: 25%;
+}
+
+.release-grid-col-5 .wolf-release {
+  width: 20%;
+}
+
+.release-grid-col-6 .wolf-release {
+  width: 16.66667%;
+}
+
+.release-grid-col-7 .wolf-release {
+  width: 14.28571%;
+}
+
+.release-grid-col-8 .wolf-release {
+  width: 12.5%;
+}
+
+.release-grid-col-9 .wolf-release {
+  width: 11.11111%;
+}
+
+.release-grid-col-10 .wolf-release {
+  width: 10%;
+}
+
+.release-grid-col-11 .wolf-release {
+  width: 9.09091%;
+}
+
+.release-grid-col-12 .wolf-release {
+  width: 8.33333%;
+}
+
+@media screen and (max-width: 900px) {
+  .release-grid-col-4 .wolf-release {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 799px) {
   article.wolf-release .entry-thumbnail,
   article.wolf-release .entry-content {
@@ -154,5 +244,66 @@ article.wolf-release footer.entry-meta {
 
   article.wolf-release .entry-content {
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .release-grid-col-1 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-2 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-3 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-4 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-5 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-6 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-7 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-8 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-9 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-10 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-11 .wolf-release {
+    width: 100%;
+    float: none;
+  }
+
+  .release-grid-col-12 .wolf-release {
+    width: 100%;
+    float: none;
   }
 }

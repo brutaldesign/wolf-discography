@@ -88,7 +88,8 @@ article.wolf-release{
 	margin-bottom: 1em;
 }
 
-#wolf-release-buttons{
+#wolf-release-buttons,
+.wolf-release-buttons{
 	display:table;
 	width: 100%;
 	margin-top: 10px;
@@ -150,6 +151,54 @@ article.wolf-release{
 	}
 }
 
+/* Shortcode */
+.shortcode-release-grid{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	li{
+		list-style-type: none!important;
+		float:left;
+		width: 25%;
+
+		.entry-thumbnail{
+			float: none;
+			width: 95%!important;
+			text-align: center;
+			margin-left: auto!important;
+			margin-right: auto!important;
+			margin-top: 0!important;
+			margin-bottom:1em!important;
+			height: auto;
+
+			.entry-title{
+				height: auto;
+				line-height: 1.5;
+				font-size: 16px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+$cols : 12;
+$width: 100%;
+
+@for $i from 1 through $cols {
+	.release-grid-col-#{$i} .wolf-release{
+		width: ( $width/$i  ) ;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.release-grid-col-4 .wolf-release{
+		width: 50%;
+	}
+
+}
+
 @media screen and (max-width: 799px) {
 	article.wolf-release .entry-thumbnail, 
 	article.wolf-release .entry-content {
@@ -163,4 +212,15 @@ article.wolf-release{
 		margin-top: 15px;
 	}
 }
+
+@media screen and (max-width:500px) {
+	
+	@for $i from 1 through $cols {
+		.release-grid-col-#{$i} .wolf-release{
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
 
